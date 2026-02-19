@@ -1,0 +1,186 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vibevolume.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Bluetooth permissions -->
+12    <uses-permission
+12-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:5:5-94
+13        android:name="android.permission.BLUETOOTH"
+13-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:5:22-65
+14        android:maxSdkVersion="30" />
+14-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:5:66-92
+15    <uses-permission
+15-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:6:5-100
+16        android:name="android.permission.BLUETOOTH_ADMIN"
+16-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:6:22-71
+17        android:maxSdkVersion="30" />
+17-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:6:72-98
+18    <uses-permission
+18-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:7:5-10:57
+19        android:name="android.permission.BLUETOOTH_SCAN"
+19-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:7:22-70
+20        android:usesPermissionFlags="neverForLocation" />
+20-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:8:9-55
+21    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+21-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:11:5-75
+21-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:11:22-73
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:12:5-78
+22-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:12:22-76
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:13:5-80
+23-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:13:22-78
+24
+25    <!-- Foreground service -->
+26    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+26-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:16:5-76
+26-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:16:22-74
+27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+27-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:17:5-93
+27-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:17:22-91
+28
+29    <!-- Volume control -->
+30    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+30-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:20:5-79
+30-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:20:22-77
+31
+32    <uses-feature
+32-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:22:5-90
+33        android:name="android.hardware.bluetooth_le"
+33-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:22:19-63
+34        android:required="false" />
+34-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:22:64-88
+35    <uses-feature
+35-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:23:5-97
+36        android:name="android.hardware.sensor.accelerometer"
+36-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:23:19-71
+37        android:required="true" />
+37-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:23:72-95
+38
+39    <permission
+39-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+40        android:name="com.vibevolume.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+40-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+41        android:protectionLevel="signature" />
+41-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+42
+43    <uses-permission android:name="com.vibevolume.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+43-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+43-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+44
+45    <application
+45-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:25:5-45:19
+46        android:allowBackup="true"
+46-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:26:9-35
+47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+47-->[androidx.core:core:1.12.0] C:\Users\valnu\.gradle\caches\transforms-3\d41a4de761284beef8ad1ee3e8022271\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+48        android:debuggable="true"
+49        android:extractNativeLibs="false"
+50        android:label="VibeVolume"
+50-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:27:9-35
+51        android:supportsRtl="true"
+51-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:28:9-35
+52        android:testOnly="true"
+53        android:theme="@style/Theme.VibeVolume" >
+53-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:29:9-48
+54        <activity
+54-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:31:9-38:20
+55            android:name="com.vibevolume.app.MainActivity"
+55-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:32:13-41
+56            android:exported="true" >
+56-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:33:13-36
+57            <intent-filter>
+57-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:34:13-37:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:35:17-68
+58-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:35:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:36:17-76
+60-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:36:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <service
+64-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:40:9-43:39
+65            android:name="com.vibevolume.app.VibeVolumeService"
+65-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:41:13-46
+66            android:exported="false"
+66-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:43:13-37
+67            android:foregroundServiceType="connectedDevice" />
+67-->D:\Downloads\VibeVolume_v2\VibeVolume\app\src\main\AndroidManifest.xml:42:13-60
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+71            android:authorities="com.vibevolume.app.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\valnu\.gradle\caches\transforms-3\272b789018953262fa60c55b9e8111fb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\valnu\.gradle\caches\transforms-3\60052b621ed8399794e7ee265552492e\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\valnu\.gradle\caches\transforms-3\60052b621ed8399794e7ee265552492e\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\valnu\.gradle\caches\transforms-3\60052b621ed8399794e7ee265552492e\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+81                android:value="androidx.startup" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+82        </provider>
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\valnu\.gradle\caches\transforms-3\ca4c714668818be6b0714091603996bb\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+101            </intent-filter>
+102        </receiver>
+103    </application>
+104
+105</manifest>

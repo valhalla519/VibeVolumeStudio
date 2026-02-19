@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIBEVOLUME"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto-adjusts volume to your crowd"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="● INACTIVE"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnToggle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="START"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginBottom="36dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#222222" android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIVE READINGS"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:id="@+id/tvBluetoothCount"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Bluetooth Devices: —" android:textSize="15sp"
+            android:textColor="#CCCCCC" android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvVibrationLevel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Vibration Energy: —" android:textSize="15sp"
+            android:textColor="#CCCCCC" android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvCrowdScore"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Crowd Score: —" android:textSize="15sp"
+            android:textColor="@color/green" android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvCurrentVolume"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="System Volume: —" android:textSize="15sp"
+            android:textColor="#CCCCCC" android:layout_marginBottom="32dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#222222" android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:id="@+id/tvMinLabel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Min Volume: 3" android:textSize="14sp"
+            android:textColor="#CCCCCC" android:layout_marginBottom="8dp"/>
+
+        <SeekBar android:id="@+id/seekMin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:progressTint="@color/green" android:thumbTint="@color/green"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:id="@+id/tvMaxLabel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Max Volume: 12" android:textSize="14sp"
+            android:textColor="#CCCCCC" android:layout_marginBottom="8dp"/>
+
+        <SeekBar android:id="@+id/seekMax"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:progressTint="@color/green" android:thumbTint="@color/green"
+            android:layout_marginBottom="28dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#222222" android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESPONSE CURVE"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button android:id="@+id/btnGradual"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="Gradual"
+                android:textSize="13sp" android:backgroundTint="@color/button_inactive"
+                android:textColor="@color/text_secondary" android:layout_marginEnd="6dp"/>
+
+            <Button android:id="@+id/btnMedium"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="Medium"
+                android:textSize="13sp" android:backgroundTint="@color/green"
+                android:textColor="@color/white" android:layout_marginEnd="6dp"/>
+
+            <Button android:id="@+id/btnAggressive"
+                android:layout_width="0dp" android:layout_height="44dp"
+                android:layout_weight="1" android:text="Aggressive"
+                android:textSize="13sp" android:backgroundTint="@color/button_inactive"
+                android:textColor="@color/text_secondary"/>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvCurveDesc"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Balanced response. Volume tracks crowd growth proportionally. Good default for most parties."
+            android:textSize="13sp" android:textColor="#666666"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calibrates to baseline on first start. BT scan runs every 30s. Volume adjusts every 5s."
+            android:textSize="12sp" android:textColor="#444444"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color button_inactive
+color green
+color red
+color text_secondary
+color white
+id btnAggressive
+id btnGradual
+id btnMedium
+id btnToggle
+id seekMax
+id seekMin
+id tvBluetoothCount
+id tvCrowdScore
+id tvCurrentVolume
+id tvCurveDesc
+id tvMaxLabel
+id tvMinLabel
+id tvStatus
+id tvVibrationLevel
+layout activity_main
+string app_name
+style Theme.VibeVolume
